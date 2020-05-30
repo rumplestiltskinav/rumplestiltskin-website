@@ -83,7 +83,9 @@ small {
   .content {
     width: 100%;
     left: 0;
-    padding-top: 2.5em; }
+    padding-top: 2.5em;
+    padding-left: 0.3em;
+    padding-right: 0.3em; }
 
   .sidebar {
     position: relative;
