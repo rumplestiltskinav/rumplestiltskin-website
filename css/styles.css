@@ -79,4 +79,43 @@ small {
   .serviceBox p {
     text-align: left; }
 
+@media (max-width: 767px) {
+  .content {
+    width: 100%;
+    left: 0; }
+
+  .sidebar {
+    position: relative;
+    height: auto;
+    width: 100%;
+    padding: 1em; }
+    .sidebar svg {
+      width: 2em;
+      height: 2em;
+      fill: white;
+      display: inline-block;
+      position: relative;
+      margin: 0 auto; }
+    .sidebar .menubar {
+      display: block;
+      position: absolute;
+      right: 0;
+      top: 0em;
+      right: 0; }
+    .sidebar .menubar a {
+      display: inline-block;
+      width: auto;
+      padding: 1.23em;
+      color: white;
+      text-align: center;
+      position: relative;
+      margin: 0;
+      background: transparent;
+      z-index: 2;
+      transition: all 0.2s;
+      -webkit-transition: all 0.2s; }
+      .sidebar .menubar a:hover {
+        text-decoration: none;
+        background-color: #015387; } }
+
 /*# sourceMappingURL=styles.css.map */
