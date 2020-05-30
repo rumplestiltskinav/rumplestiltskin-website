@@ -82,7 +82,8 @@ small {
 @media (max-width: 767px) {
   .content {
     width: 100%;
-    left: 0; }
+    left: 0;
+    padding-top: 2.5em; }
 
   .sidebar {
     position: relative;
