@@ -1,0 +1,168 @@
+$green: rgb(50,168,82);
+$dark-green: rgb(29,99,48);
+$blue: rgb(45,103,176);
+$dark-blue: rgb(30,93,169);
+$black: rgb(10,10,10);
+$dark-grey:rgb(22,22,22);
+$light-grey:rgb(243,243,243);
+
+$headFont: "Spartan", sans-serif;
+$bodyFont: "Jost", sans-serif;
+
+@font-face{
+	font-family:"Spartan";
+	src:url("../fonts/Spartan/Spartan-Medium.ttf");
+	font-weight:normal;
+	font-style:normal;
+}
+@font-face{
+	font-family:"Jost";
+	src:url("../fonts/Jost/Jost-Light.ttf");
+	font-weight:normal;
+	font-style:normal;
+}
+
+
+body{
+	overflow-x:hidden;
+	font-family:$bodyFont;
+}
+h1, h2, h3, h4, h5, h6{
+	font-family:$headFont;
+}
+.textRight{
+	text-align:right;
+}
+.rsHeader{
+	width:100%;
+	background-color:$black;
+	padding:1em;
+	svg#logoSVG{
+		height:3em;
+		width:3em;
+		position:relative;
+		display:inline-block;
+
+	}
+	.menuSet{
+		display:inline-block;
+		a{
+			color:white;
+			display:inline-block;
+			font-size:1em;
+			padding:0.7em;
+			&:hover{
+				color:$blue;
+				text-decoration:none;
+			}
+			&:last-child{
+				padding-right:0;
+			}
+		}
+		margin:0;
+	}
+
+}
+.blackBox{
+	color:white;
+	padding-top:2em;
+	padding-bottom:2em;
+}
+.vhContainer40{
+	height:60vh;
+	position:relative;
+	min-height:10em;
+}
+.vCenter{
+	position:absolute;
+	top:50%;
+	transform:translate(0%, -50%);
+}
+.loadConfirm{
+	width:100vw;
+	height:100vh;
+	top:0;
+	left:0;
+	position:fixed;
+	background-color:$black;
+	text-align:center;
+}
+
+.loader {
+  border: 16px solid #fff; /* Light grey */
+  border-top: 16px solid $green; /* Blue */
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  animation: spin 2s linear infinite;
+  position:fixed;
+}
+.loaderCenter{
+	top:calc(50% - 60px);
+	left:calc(50% - 60px);
+
+}
+.padContainer{
+	padding-top:2em;
+}
+.titleContainer{
+	background-color:$light-grey;
+	color:$dark-grey;
+	padding:2em;
+	h1, h2, h3, h4, h5, h6{
+		padding:0;
+		margin:0;
+	}
+}
+.padBottom{
+	padding-bottom:2em;
+}
+.gIcons{
+	i{
+		color:green !important;
+	}
+}
+.contactSection{
+	padding-top:2em;
+	padding-bottom:2em;
+	background-color:$green;
+	color:white;
+}
+.buttonGroup{
+	display:inline-block;
+	a{
+		display:inline-block;
+		padding:1em;
+		background-color:white;
+		color:$blue;
+		text-decoration:none;
+		transition:all 0.2s;
+		-webkit-transition:all 0.2s;
+		&:hover{
+			color:white;
+			background-color:$blue;
+		}
+	}
+}
+.textCenter{
+	text-align:center;
+}
+@media (min-width: 768px){
+	.serviceBox{
+		text-align:center;
+		margin:1em;
+		i{
+			color:$blue;
+			font-size:5em;
+			margin-bottom:0.2em;
+		}
+	}
+
+}
+
+
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
