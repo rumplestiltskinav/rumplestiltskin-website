@@ -29,6 +29,7 @@ h1, h2, h3, h4, h5, h6 {
     display: inline-block; }
   .rsHeader .menuSet {
     display: inline-block;
+    float: right;
     margin: 0; }
     .rsHeader .menuSet a {
       color: white;
@@ -47,7 +48,7 @@ h1, h2, h3, h4, h5, h6 {
   padding-bottom: 2em; }
 
 .vhContainer40 {
-  height: 60vh;
+  height: 40vh;
   position: relative;
   min-height: 10em; }
 
@@ -120,14 +121,20 @@ h1, h2, h3, h4, h5, h6 {
 .textCenter {
   text-align: center; }
 
-@media (min-width: 768px) {
-  .serviceBox {
-    text-align: center;
-    margin: 1em; }
-    .serviceBox i {
-      color: #2d67b0;
-      font-size: 5em;
-      margin-bottom: 0.2em; } }
+.serviceBox {
+  text-align: center;
+  margin: 1em; }
+  .serviceBox i {
+    color: #2d67b0;
+    font-size: 5em;
+    margin-bottom: 0.2em; }
+
+@media (max-width: 767px) {
+  h1, h2 {
+    text-align: center; }
+
+  .contactSection {
+    text-align: center; } }
 @keyframes spin {
   0% {
     transform: rotate(0deg); }
