@@ -118,6 +118,19 @@ h1, h2, h3, h4, h5, h6 {
       color: white;
       background-color: #2d67b0; }
 
+.btnGreen {
+  display: inline-block;
+  padding: 1em;
+  background-color: #32a852;
+  color: white;
+  text-decoration: none;
+  transition: all 0.2s;
+  -webkit-transition: all 0.2s; }
+  .btnGreen:hover {
+    color: white;
+    background-color: #1d6330;
+    text-decoration: none; }
+
 .textCenter {
   text-align: center; }
 
@@ -129,12 +142,64 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 5em;
     margin-bottom: 0.2em; }
 
+.customCaption {
+  text-align: left;
+  background-color: white;
+  color: black;
+  position: absolute;
+  top: 50%;
+  left: 15%;
+  transform: translate(0%, -50%);
+  display: inline-block !important;
+  box-sizing: content-box;
+  width: 70%;
+  max-width: 400px;
+  padding: 2rem; }
+  .customCaption .flexContainer {
+    justify-content: space-between;
+    flex-direction: column;
+    display: flex;
+    height: 100%; }
+    .customCaption .flexContainer .flexBottom {
+      justify-content: flex-end;
+      display: flex; }
+  .customCaption h5 {
+    color: #2d67b0;
+    font-size: 2rem;
+    font-weight: bold; }
+
 @media (max-width: 767px) {
   h1, h2 {
     text-align: center; }
 
   .contactSection {
-    text-align: center; } }
+    text-align: center; }
+
+  .customCaption {
+    text-align: left;
+    background-color: white;
+    color: black;
+    position: relative;
+    top: 0;
+    left: 0%;
+    transform: translate(0%, 0%);
+    display: inline-block !important;
+    box-sizing: content-box;
+    width: calc(100% - 4em);
+    max-width: 767px;
+    padding: 2rem; }
+    .customCaption .flexContainer {
+      justify-content: space-between;
+      flex-direction: column;
+      display: flex;
+      height: 100%; }
+      .customCaption .flexContainer .flexBottom {
+        justify-content: flex-end;
+        display: flex; }
+    .customCaption h5 {
+      color: #2d67b0;
+      font-size: 2rem;
+      font-weight: bold; } }
 @keyframes spin {
   0% {
     transform: rotate(0deg); }

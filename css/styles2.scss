@@ -146,6 +146,21 @@ h1, h2, h3, h4, h5, h6{
 		}
 	}
 }
+.btnGreen{
+	display:inline-block;
+	padding:1em;
+	background-color:$green;
+	color:white;
+
+	text-decoration:none;
+	transition:all 0.2s;
+	-webkit-transition:all 0.2s;
+	&:hover{
+		color:white;
+		background-color:$dark-green;
+		text-decoration:none;
+	}
+}
 .textCenter{
 	text-align:center;
 }
@@ -158,6 +173,39 @@ h1, h2, h3, h4, h5, h6{
 			margin-bottom:0.2em;
 		}
 	}
+.customCaption{
+	text-align:left;
+  background-color:white;
+  color:black;
+  position:absolute;
+  top:50%;
+  left:15%;
+  transform:translate(0%, -50%);
+  display:inline-block !important;
+  box-sizing:content-box;
+  width:70%;
+  max-width:400px;
+  padding:2rem;
+
+  .flexContainer{
+  	justify-content: space-between;
+	flex-direction: column;
+	display: flex;
+  	height:100%;
+	.flexBottom{
+		justify-content: flex-end;
+ 		display: flex;
+	}
+  }
+  
+ h5{
+ 	color:$blue;
+ 	font-size:2rem;
+ 	font-weight:bold;
+ }
+}
+
+
 @media (max-width: 767px){
 	.serviceBox{
 
@@ -167,6 +215,37 @@ h1, h2, h3, h4, h5, h6{
 	}
 	.contactSection{
 		text-align:center;
+	}
+	.customCaption{
+		text-align:left;
+	  background-color:white;
+	  color:black;
+	  position:relative;
+	  top:0;
+	  left:0%;
+	  transform:translate(0%, 0%);
+	  display:inline-block !important;
+	  box-sizing:content-box;
+	  width:calc(100% - 4em);
+	  max-width:767px;
+	  padding:2rem;
+
+	  .flexContainer{
+	  	justify-content: space-between;
+		flex-direction: column;
+		display: flex;
+	  	height:100%;
+		.flexBottom{
+			justify-content: flex-end;
+	 		display: flex;
+		}
+	  }
+	  
+	 h5{
+	 	color:$blue;
+	 	font-size:2rem;
+	 	font-weight:bold;
+	 }
 	}
 
 }
